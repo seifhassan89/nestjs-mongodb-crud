@@ -6,10 +6,6 @@ export class CreateStudentDto {
   readonly name: string;
   @IsNumber()
   @IsNotEmpty()
-  readonly roleNumber: number;
-
-  @IsNumber()
-  @IsNotEmpty()
   readonly class: number;
   @IsString()
   @MaxLength(30)
